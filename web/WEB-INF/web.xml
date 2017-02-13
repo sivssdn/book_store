@@ -12,4 +12,12 @@
         <url-pattern>/addNewBook</url-pattern>
         <url-pattern>/searchBooks</url-pattern>
     </servlet-mapping>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/error.jsp?error=Some error occurred. Please go back and try again.</location>
+    </error-page>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error.jsp?error=We could not find the resource you are looking for.</location>
+    </error-page>
 </web-app>
